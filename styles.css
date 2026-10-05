@@ -1,0 +1,174 @@
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-color: #f8fafc;
+    --accent-color: #8b5cc3;
+    --border-radius: 12px;
+}
+header {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #65cded;
+    margin-bottom: 5px;
+}
+
+header p {
+    margin-top: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Inputs de texto, email y número */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* Archivo */
+input[type="file"] {
+    width: 100%;
+    color: white;
+}
+
+/* Radio buttons y checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+.form-group label:has(input[type="radio"]),
+.form-group label:has(input[type="checkbox"]) {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+/* Las opciones de radio y checkbox */
+.form-group input[type="radio"] + *,
+.form-group input[type="checkbox"] + * {
+    display: inline;
+}
+
+/* Textarea */
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Botón */
+.btn {
+    width: 100%;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+}
+
+/* Cuando pulsas en un campo */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+
+.profile-card {
+    position: relative;
+    border: 2px solid #6366f1;
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.profile-card::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px dashed #9a9bd6;
+    border-radius: 8px;
+}
+
+.profile-card h2 {
+    color: green;
+}
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+}
+.otra-reserva {
+    display: block;
+    margin-top: 20px;
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.otra-reserva:hover {
+    text-decoration: underline;
+}
