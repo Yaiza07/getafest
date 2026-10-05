@@ -13,6 +13,9 @@ if ($foto["error"] == 0) {
         echo "Formato de imagen incorrecto";
         exit;
     }
+} else {
+    echo "Debes seleccionar una imagen";
+    exit;
 }
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
